@@ -176,6 +176,9 @@ fieldset {
     padding: 0 24px;
 
 }
+.wrapper-field input:invalid{
+    outline: 2px dashed red;
+}
 .wrapper-field textarea {
     height: 167px;
     padding: 10px 24px;
