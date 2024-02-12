@@ -24,7 +24,7 @@
     </header>
 
     <form>
-        <fieldset>
+        <fieldset id="personal-info">
             <div class="wrapper-fieldset">
                 <div class="col-2">
                     <div class="wrapper-field">
@@ -43,17 +43,25 @@
             </div>
         </fieldset>
 
-        <fieldset>
-            <div class="wrapper-fieldset">
+        <fieldset id="mentor-info">
+            <div  class="wrapper-fieldset">
                 <legend>Informações do mentor</legend>
+
                 <div class="wrapper-field">
-                    <label for="input-name">Nome</label>
-                    <input type="text" id="input-name">
+                    <label for="input-mentor">Selecione quem foi o seu mentor</label>
+                    <select id="input-mentor">
+                        <option value="">Marcio</option>
+                        <option value="">José</option>
+                        <option value="">Henrique</option>
+                    </select>
+                </div>
+                <div class="wrapper-field">
+                    <label for="input-feedback">Email <span>(digite um feedback válido)</span></label>
+                    <textarea id="input-feedback"></textarea>
                 </div>
             </div>
-
-
         </fieldset>
+
     </form>
 
 
