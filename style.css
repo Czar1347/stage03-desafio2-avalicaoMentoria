@@ -113,6 +113,7 @@ fieldset {
 .wrapper-fieldset {
     display: flex;
     flex-direction: column;
+    gap: 32px;
 }
 
 #personal-info .wrapper-fieldset {
@@ -125,7 +126,7 @@ fieldset {
     gap: 22px;
 }
 
-.col-2>div {
+.col-2 > div{
     width: 100%;
 }
 
@@ -173,7 +174,6 @@ fieldset {
     padding: 0 24px;
 
 }
-
 .wrapper-field textarea {
     height: 167px;
     padding: 10px 24px;
@@ -204,9 +204,10 @@ fieldset {
     
 }
 
-#mentor-info .wrapper-fieldset {
-    gap: 32px;
+#mentor-info .wrapper-fieldset > .col-2 > div:nth-child(2) {
+    visibility: hidden;
 }
+
 #mentor-info .wrapper-checkbox input {
     position: absolute;
     top: 0;
@@ -250,4 +251,10 @@ fieldset {
 }
 #mentor-info .wrapper-checkbox input:focus + label::before {
     outline: 1px solid black;
+}
+#next-mentor .wrapper-fieldset > .col-2{
+    gap: 32px;
+}
+#next-mentor .wrapper-fieldset > .col-2 > .col-2{
+    gap: 10px;
 }
